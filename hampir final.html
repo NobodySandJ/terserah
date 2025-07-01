@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stellaria Official Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #fff9fb;
         }
+
         .member-card:hover .member-overlay {
             opacity: 1;
         }
+
         .modal {
             transition: all 0.3s ease;
         }
+
         .modal.active {
             opacity: 1;
             visibility: visible;
         }
+
         .cart-badge {
             position: absolute;
             top: -8px;
@@ -38,14 +44,16 @@
         }
     </style>
 </head>
+
 <body class="min-h-screen">
     <!-- Header/Navigation -->
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center">
-                <div class="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
-                    Stellaria
-                </div>
+               <div class="w-40">
+    <img src="login.png" alt="Stellaria Logo" class="w-full h-auto">
+</div>
+
             </div>
             <nav class="hidden md:flex space-x-8">
                 <a href="#" class="text-pink-600 font-medium hover:text-pink-800">Home</a>
@@ -69,54 +77,58 @@
             <h1 class="text-4xl md:text-5xl font-bold text-pink-700 mb-4">Cheki Chika Idol</h1>
             <p class="text-xl md:text-2xl text-pink-600 mb-8">Stellaria</p>
             <div class="text-gray-700 max-w-2xl mx-auto text-lg space-y-4 leading-relaxed">
-    <div>
-        <strong class="block text-pink-700 text-xl mb-2">Cara Order Cheki:</strong>
-        <ul class="list-decimal list-inside space-y-1">
-            <li>Klik Add to Cart sesuai jumlah Cheki, lalu lakukan pembayaran</li>
-            <li>Datang ke event</li>
-            <li>Datang ke booth Stellaria dan ambil tiket cheki</li>
-            <li>Antri di area cheki dan tunggu giliranmu</li>
-            <li>Siap cheki dengan oshi~!</li>
-        </ul>
-        <p class="text-sm mt-2 italic text-gray-500">*Apabila pemesan berhalangan hadir pada hari-H, cheki bisa dikirimkan melalui ekspedisi (ongkir ditanggung pemesan)*</p>
-    </div>
+                <div>
+                    <strong class="block text-pink-700 text-xl mb-2">Cara Order Cheki:</strong>
+                    <ul class="list-decimal list-inside space-y-1">
+                        <li>Klik Add to Cart sesuai jumlah Cheki, lalu lakukan pembayaran</li>
+                        <li>Datang ke event</li>
+                        <li>Datang ke booth Stellaria dan ambil tiket cheki</li>
+                        <li>Antri di area cheki dan tunggu giliranmu</li>
+                        <li>Siap cheki dengan oshi~!</li>
+                    </ul>
+                    <p class="text-sm mt-2 italic text-gray-500">*Apabila pemesan berhalangan hadir pada hari-H, cheki
+                        bisa dikirimkan melalui ekspedisi (ongkir ditanggung pemesan)*</p>
+                </div>
 
-    <div>
-        <strong class="block text-pink-700 text-xl mb-2">LINE UP :</strong>
-        <ul class="list-disc list-inside space-y-1">
-            <li>☆ Alice (Purple) @alicelyn__</li>
-            <li>☆ Ella (Green) @salmonelix</li>
-            <li>☆ Melody (Red) @lodehehe</li>
-            <li>☆ Nae (Orange) @evilnae_</li>
-            <li>☆ Yuna (Yellow) @hokaitto</li>
-        </ul>
-    </div>
+                <div>
+                    <strong class="block text-pink-700 text-xl mb-2">LINE UP :</strong>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>☆ Alice (Purple) @alicelyn__</li>
+                        <li>☆ Ella (Green) @salmonelix</li>
+                        <li>☆ Melody (Red) @lodehehe</li>
+                        <li>☆ Nae (Orange) @evilnae_</li>
+                        <li>☆ Yuna (Yellow) @hokaitto</li>
+                    </ul>
+                </div>
 
-    <div>
-        <strong class="block text-pink-700 text-xl mb-2">Harga:</strong>
-        <ul class="list-disc list-inside">
-            <li>1 Member Cheki (Single / 2Shot) = <strong>IDR 25.000</strong> per lembar</li>
-            <li>1 All Member / Group Cheki = <strong>IDR 30.000</strong> per lembar</li>
-        </ul>
-    </div>
+                <div>
+                    <strong class="block text-pink-700 text-xl mb-2">Harga:</strong>
+                    <ul class="list-disc list-inside">
+                        <li>1 Member Cheki (Single / 2Shot) = <strong>IDR 25.000</strong> per lembar</li>
+                        <li>1 All Member / Group Cheki = <strong>IDR 30.000</strong> per lembar</li>
+                    </ul>
+                </div>
 
-    <div>
-        <p><strong>Pembayaran melalui:</strong> Scan QRIS saat checkout.</p>
-    </div>
+                <div>
+                    <p><strong>Pembayaran melalui:</strong> Scan QRIS saat checkout.</p>
+                </div>
 
-    <div>
-        <p>
-            Jika ada pertanyaan atau kendala, bisa DM ke Instagram Stellaria 
-            <a href="https://instagram.com/stellaria.official" target="_blank" class="text-pink-600 underline">@stellaria.official</a> 
-            atau WhatsApp ke nomor CP Stellaria: 
-            <a href="https://wa.me/6282211232447" target="_blank" class="text-pink-600 underline">0822-1123-2447 (Rendy)</a>
-        </p>
-    </div>
+                <div>
+                    <p>
+                        Jika ada pertanyaan atau kendala, bisa DM ke Instagram Stellaria
+                        <a href="https://instagram.com/stellaria.official" target="_blank"
+                            class="text-pink-600 underline">@stellaria.official</a>
+                        atau WhatsApp ke nomor CP Stellaria:
+                        <a href="https://wa.me/6282211232447" target="_blank"
+                            class="text-pink-600 underline">0822-1123-2447 (Rendy)</a>
+                    </p>
+                </div>
 
-    <div>
-        <p class="text-center text-pink-700 font-semibold">Terima kasih telah mendukung Stellaria~<br>See You! ☆</p>
-    </div>
-</div>
+                <div>
+                    <p class="text-center text-pink-700 font-semibold">Terima kasih telah mendukung Stellaria~<br>See
+                        You! ☆</p>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -127,120 +139,144 @@
             <h2 class="text-3xl font-bold text-center text-pink-700 mb-12">Members of Stellaria</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <!-- Member 1 -->
-                <div class="member-card bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                <div
+                    class="member-card bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
                     <div class="relative">
                         <img src="Nae.jpg" alt="Nae" class="w-full h-64 object-cover">
-                        <div class="member-overlay absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 transition-opacity duration-300 flex items-end p-4">
+                        <div
+                            class="member-overlay absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 transition-opacity duration-300 flex items-end p-4">
                             <h3 class="text-white text-xl font-bold">Nae 🧡</h3>
                         </div>
                     </div>
                     <div class="p-4">
                         <h3 class="text-xl font-bold text-pink-700">Nae 🧡</h3>
                         <p class="text-gray-600 mb-4">Affectionate,Expressive,Playful</p>
-                        <button onclick="openModal('nae')" class="w-full bg-pink-100 text-pink-700 py-2 rounded-lg hover:bg-pink-200 transition">
+                        <button onclick="openModal('nae')"
+                            class="w-full bg-pink-100 text-pink-700 py-2 rounded-lg hover:bg-pink-200 transition">
                             View Profile
                         </button>
-                        <button onclick="addToCart('Nae', '🧡', 'https://placehold.co/600x800/f5b8c2/ffffff?text=Nae')" class="w-full mt-2 bg-orange-100 text-orange-700 py-2 rounded-lg hover:bg-orange-200 transition">
+                        <button onclick="addToCart('Nae', '🧡', 'nae.jpg')"
+                            class="w-full mt-2 bg-orange-100 text-orange-700 py-2 rounded-lg hover:bg-orange-200 transition">
                             Add to Cart
                         </button>
                     </div>
                 </div>
 
                 <!-- Member 2 -->
-                <div class="member-card bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                <div
+                    class="member-card bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
                     <div class="relative">
                         <img src="yuna.jpg" alt="Yuna" class="w-full h-64 object-cover">
-                        <div class="member-overlay absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 transition-opacity duration-300 flex items-end p-4">
+                        <div
+                            class="member-overlay absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 transition-opacity duration-300 flex items-end p-4">
                             <h3 class="text-white text-xl font-bold">Yuna 💛</h3>
                         </div>
                     </div>
                     <div class="p-4">
                         <h3 class="text-xl font-bold text-pink-700">Yuna 💛</h3>
                         <p class="text-gray-600 mb-4">Independent,Quirky,Stylish</p>
-                        <button onclick="openModal('yuna')" class="w-full bg-pink-100 text-pink-700 py-2 rounded-lg hover:bg-pink-200 transition">
+                        <button onclick="openModal('yuna')"
+                            class="w-full bg-pink-100 text-pink-700 py-2 rounded-lg hover:bg-pink-200 transition">
                             View Profile
                         </button>
-                        <button onclick="addToCart('Yuna', '💛', 'https://placehold.co/600x800/f5e8b2/ffffff?text=Yuna')" class="w-full mt-2 bg-yellow-100 text-yellow-700 py-2 rounded-lg hover:bg-yellow-200 transition">
+                        <button onclick="addToCart('Yuna', '💛', 'yuna.jpg')"
+                            class="w-full mt-2 bg-yellow-100 text-yellow-700 py-2 rounded-lg hover:bg-yellow-200 transition">
                             Add to Cart
                         </button>
                     </div>
                 </div>
 
                 <!-- Member 3 -->
-                <div class="member-card bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                <div
+                    class="member-card bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
                     <div class="relative">
                         <img src="Alice.jpg" alt="Alice" class="w-full h-64 object-cover">
-                        <div class="member-overlay absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 transition-opacity duration-300 flex items-end p-4">
+                        <div
+                            class="member-overlay absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 transition-opacity duration-300 flex items-end p-4">
                             <h3 class="text-white text-xl font-bold">Alice 💜</h3>
                         </div>
                     </div>
                     <div class="p-4">
                         <h3 class="text-xl font-bold text-pink-700">Alice 💜</h3>
                         <p class="text-gray-600 mb-4">Cheerful,Imaginative,Energetic</p>
-                        <button onclick="openModal('alice')" class="w-full bg-pink-100 text-pink-700 py-2 rounded-lg hover:bg-pink-200 transition">
+                        <button onclick="openModal('alice')"
+                            class="w-full bg-pink-100 text-pink-700 py-2 rounded-lg hover:bg-pink-200 transition">
                             View Profile
                         </button>
-                        <button onclick="addToCart('Alice', '💜', 'alice.jpg')" class="w-full mt-2 bg-purple-100 text-purple-700 py-2 rounded-lg hover:bg-purple-200 transition">
+                        <button onclick="addToCart('Alice', '💜', 'alice.jpg')"
+                            class="w-full mt-2 bg-purple-100 text-purple-700 py-2 rounded-lg hover:bg-purple-200 transition">
                             Add to Cart
                         </button>
                     </div>
                 </div>
 
                 <!-- Member 4 -->
-                <div class="member-card bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                <div
+                    class="member-card bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
                     <div class="relative">
                         <img src="Melody.jpg" alt="Melody" class="w-full h-64 object-cover">
-                        <div class="member-overlay absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 transition-opacity duration-300 flex items-end p-4">
+                        <div
+                            class="member-overlay absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 transition-opacity duration-300 flex items-end p-4">
                             <h3 class="text-white text-xl font-bold">Melody ❤️</h3>
                         </div>
                     </div>
                     <div class="p-4">
                         <h3 class="text-xl font-bold text-pink-700">Melody ❤️</h3>
                         <p class="text-gray-600 mb-4">Warmhearted,Creative,Charming</p>
-                        <button onclick="openModal('melody')" class="w-full bg-pink-100 text-pink-700 py-2 rounded-lg hover:bg-pink-200 transition">
+                        <button onclick="openModal('melody')"
+                            class="w-full bg-pink-100 text-pink-700 py-2 rounded-lg hover:bg-pink-200 transition">
                             View Profile
                         </button>
-                        <button onclick="addToCart('Melody', '❤️', 'https://placehold.co/600x800/f5c2c2/ffffff?text=Melody')" class="w-full mt-2 bg-red-100 text-red-700 py-2 rounded-lg hover:bg-red-200 transition">
+                        <button onclick="addToCart('Melody', '❤️', 'melody.jpg')"
+                            class="w-full mt-2 bg-red-100 text-red-700 py-2 rounded-lg hover:bg-red-200 transition">
                             Add to Cart
                         </button>
                     </div>
                 </div>
 
                 <!-- Member 5 -->
-                <div class="member-card bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                <div
+                    class="member-card bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
                     <div class="relative">
                         <img src="Ella.jpg" alt="Ella" class="w-full h-64 object-cover">
-                        <div class="member-overlay absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 transition-opacity duration-300 flex items-end p-4">
+                        <div
+                            class="member-overlay absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 transition-opacity duration-300 flex items-end p-4">
                             <h3 class="text-white text-xl font-bold">Ella 💚</h3>
                         </div>
                     </div>
                     <div class="p-4">
                         <h3 class="text-xl font-bold text-pink-700">Ella 💚</h3>
                         <p class="text-gray-600 mb-4">Artistic,Gentle,Dreamy</p>
-                        <button onclick="openModal('ella')" class="w-full bg-pink-100 text-pink-700 py-2 rounded-lg hover:bg-pink-200 transition">
+                        <button onclick="openModal('ella')"
+                            class="w-full bg-pink-100 text-pink-700 py-2 rounded-lg hover:bg-pink-200 transition">
                             View Profile
                         </button>
-                        <button onclick="addToCart('Ella', '💚', 'https://placehold.co/600x800/c2f5d8/ffffff?text=Ella')" class="w-full mt-2 bg-green-100 text-green-700 py-2 rounded-lg hover:bg-green-200 transition">
+                        <button onclick="addToCart('Ella', '💚', 'ella.jpg')"
+                            class="w-full mt-2 bg-green-100 text-green-700 py-2 rounded-lg hover:bg-green-200 transition">
                             Add to Cart
                         </button>
                     </div>
                 </div>
 
                 <!-- Group Cheki -->
-                <div class="member-card bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                <div
+                    class="member-card bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
                     <div class="relative">
                         <img src="group.jpg" alt="Group Cheki" class="w-full h-64 object-cover">
-                        <div class="member-overlay absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 transition-opacity duration-300 flex items-end p-4">
+                        <div
+                            class="member-overlay absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 transition-opacity duration-300 flex items-end p-4">
                             <h3 class="text-white text-xl font-bold">Group Cheki 🖤</h3>
                         </div>
                     </div>
                     <div class="p-4">
                         <h3 class="text-xl font-bold text-pink-700">Group Cheki 🖤</h3>
                         <p class="text-gray-600 mb-4">Group photo with all members, perfect for fans.</p>
-                        <button onclick="openModal('group')" class="w-full bg-pink-100 text-pink-700 py-2 rounded-lg hover:bg-pink-200 transition">
+                        <button onclick="openModal('group')"
+                            class="w-full bg-pink-100 text-pink-700 py-2 rounded-lg hover:bg-pink-200 transition">
                             View Details
                         </button>
-                        <button onclick="addToCart('Group Cheki', '🖤', 'https://placehold.co/600x800/e2e2e2/ffffff?text=Group')" class="w-full mt-2 bg-gray-100 text-gray-700 py-2 rounded-lg hover:bg-gray-200 transition">
+                        <button onclick="addToCart('Group Cheki', '🖤', 'group.jpg')"
+                            class="w-full mt-2 bg-gray-100 text-gray-700 py-2 rounded-lg hover:bg-gray-200 transition">
                             Add to Cart
                         </button>
                     </div>
@@ -285,8 +321,7 @@
                 <div class="bg-pink-50 rounded-xl p-8 shadow-md">
                     <h3 class="text-2xl font-bold text-pink-700 mb-4">Meet & Greet with Stellaria</h3>
                     <p class="text-gray-700 mb-6">
-                        Our Cheki Sessions are special events where you can meet your favorite members, take polaroid photos (cheki) with them, 
-                        and have short conversations. Each session includes one signed cheki and a small gift from the member.
+                       Sesi Cheki kami adalah acara khusus tempat Anda dapat bertemu dengan anggota favorit Anda, berfoto polaroid (cheki) bersama mereka, dan berbincang singkat. Setiap sesi mencakup satu cheki yang ditandatangani dan hadiah kecil dari anggota.
                     </p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="bg-white p-4 rounded-lg shadow-sm">
@@ -316,12 +351,14 @@
                         <p class="text-gray-500 text-center py-8">Your cart is empty</p>
                     </div>
                     <div class="flex justify-between items-center border-t pt-4">
-                        <button onclick="clearCart()" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition">
+                        <button onclick="clearCart()"
+                            class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition">
                             Clear Cart
                         </button>
                         <div class="text-right">
                             <p class="text-gray-700">Total: <span id="cart-total" class="font-bold">¥0</span></p>
-                            <button onclick="checkout()" class="mt-2 px-6 py-2 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition">
+                            <button onclick="checkout()"
+                                class="mt-2 px-6 py-2 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition">
                                 Checkout
                             </button>
                         </div>
@@ -340,13 +377,16 @@
                     <p class="text-pink-200">Cheki Chika Idol Group</p>
                 </div>
                 <div class="flex space-x-6">
-                    <a href="https://www.whatsapp.com/channel/0029VaxeSCKFcow3VXkvkK0x" class="text-pink-200 hover:text-white"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/stellaria.official/" class="text-pink-200 hover:text-white"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@stellaria.official" class="text-pink-200 hover:text-white"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.whatsapp.com/channel/0029VaxeSCKFcow3VXkvkK0x"
+                        class="text-pink-200 hover:text-white"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/stellaria.official/" class="text-pink-200 hover:text-white"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@stellaria.official" class="text-pink-200 hover:text-white"><i
+                            class="fab fa-youtube"></i></a>
                 </div>
             </div>
             <div class="mt-8 text-center text-pink-300 text-sm">
-                &copy; 2023 Stellaria. All rights reserved.
+                &copy; 2025 Stellaria. All rights reserved.
             </div>
         </div>
     </footer>
@@ -370,7 +410,8 @@
     </div>
 
     <!-- Checkout Modal -->
-    <div id="checkout-modal" class="modal fixed inset-0 bg-black/70 z-50 flex items-center justify-center opacity-0 invisible">
+    <div id="checkout-modal"
+        class="modal fixed inset-0 bg-black/70 z-50 flex items-center justify-center opacity-0 invisible">
         <div class="bg-white rounded-xl max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto">
             <div class="p-6">
                 <div class="flex justify-between items-start mb-4">
@@ -382,29 +423,39 @@
                 <form id="checkout-form" class="space-y-4">
                     <div>
                         <label for="fullname" class="block text-gray-700 mb-1">Full Name</label>
-                        <input type="text" id="fullname" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500">
+                        <input type="text" id="fullname" required
+                            class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500">
                     </div>
                     <div>
+                        <label for="email" class="block text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="email" required
+                            class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500">
+                    </div>
+
+                    <div>
                         <label for="phone" class="block text-gray-700 mb-1">Mobile Number / WhatsApp</label>
-                        <input type="tel" id="phone" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500">
+                        <input type="tel" id="phone" required
+                            class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500">
                     </div>
                     <div>
                         <label for="instagram" class="block text-gray-700 mb-1">Instagram Handle</label>
-                        <input type="text" id="instagram" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500">
+                        <input type="text" id="instagram"
+                            class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500">
                     </div>
                     <div class="space-y-4">
-    <div>
-        <label class="block text-gray-700 mb-1">Scan QRIS untuk pembayaran</label>
-        <img src="qris.jpg" alt="QRIS Payment" class="w-full max-w-xs mx-auto rounded-lg shadow">
-    </div>
-    <div>
-         <label for="payment-proof" class="block text-gray-700 mb-1">Upload Bukti Pembayaran</label>
-    <input type="file" id="payment-proof" name="payment-proof" accept="image/*" required
-           class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500">
-    </div>
-</div>
+                        <div>
+                            <label class="block text-gray-700 mb-1">Scan QRIS untuk pembayaran</label>
+                            <img src="qris.jpg" alt="QRIS Payment" class="w-full max-w-xs mx-auto rounded-lg shadow">
+                        </div>
+                        <div>
+                            <label for="payment-proof" class="block text-gray-700 mb-1">Upload Bukti Pembayaran</label>
+                            <input type="file" id="payment-proof" name="payment-proof" accept="image/*" required
+                                class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500">
+                        </div>
+                    </div>
 
-                    <button type="submit" class="w-full bg-pink-600 text-white py-2 rounded-lg hover:bg-pink-700 transition">
+                    <button type="submit"
+                        class="w-full bg-pink-600 text-white py-2 rounded-lg hover:bg-pink-700 transition">
                         Complete Order
                     </button>
                 </form>
@@ -413,12 +464,14 @@
     </div>
 
     <!-- Thank You Modal -->
-    <div id="thankyou-modal" class="modal fixed inset-0 bg-black/70 z-50 flex items-center justify-center opacity-0 invisible">
+    <div id="thankyou-modal"
+        class="modal fixed inset-0 bg-black/70 z-50 flex items-center justify-center opacity-0 invisible">
         <div class="bg-white rounded-xl max-w-md w-full mx-4 p-8 text-center">
             <div class="text-5xl text-pink-600 mb-4">🎉</div>
             <h3 class="text-2xl font-bold text-pink-700 mb-4">Thank you for ordering Cheki with Stellaria 💫</h3>
             <p class="text-gray-700 mb-6">We'll contact you soon with the details of your order.</p>
-            <button onclick="closeThankYouModal()" class="px-6 py-2 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition">
+            <button onclick="closeThankYouModal()"
+                class="px-6 py-2 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition">
                 Close
             </button>
         </div>
@@ -442,7 +495,7 @@
             },
             yuna: {
                 name: "💛YUNA💛",
-                image:"yuna.jpg",
+                image: "yuna.jpg",
                 jiko: "Seperti madu yang ‘kan maniskan hari harimu, Halo, aku Yunaaa~! 🐝✨",
                 tanggallahir: "27 Desember",
                 zodiac: "Capricorn",
@@ -455,7 +508,7 @@
             },
             alice: {
                 name: "💜ALICE💜",
-                image:"alice.jpg",
+                image: "alice.jpg",
                 jiko: "Si gadis ceria yang akan membawa kamu ke Wornderlad Panggil aku Alice~ 🐰✨",
                 tanggallahir: "7 November",
                 zodiac: "Scorpio",
@@ -468,7 +521,7 @@
             },
             melody: {
                 name: "❤️MELODY❤️",
-                image:"melody.jpg",
+                image: "melody.jpg",
                 jiko: "Seperti lagu favoritmu,bolehkah aku selalu temani hari-harimu?Halo, aku Melody! 🎵🍒",
                 tanggallahir: "13 November",
                 zodiac: "Scorpio",
@@ -481,7 +534,7 @@
             },
             ella: {
                 name: "💚ELLA💚",
-                image:"ella.jpg",
+                image: "ella.jpg",
                 jiko: "Seniman introvert yang akan melukis senyuman di wajahmu! Halo, aku Ella~ 🎨✨",
                 tanggallahir: "26 januari",
                 zodiac: "Aquarius",
@@ -493,38 +546,38 @@
                 warnafavorit: "Turqoise,Ungu"
             },
             group: {
-                 name: "Group Cheki 🖤",
-                 image:"group.jpg",
-                 deskripsi: "Stellaria adalah grup idola yang berasal dari Malang, Indonesia. Grup ini mulai aktif sejak sekitar tahun 2023 dan terus berkembang hingga kini. Saat ini, Stellaria terdiri dari lima anggota berbakat: Alice, Nae, Yuna, Melody, dan Ella. Dengan semangat dan kekompakan mereka, Stellaria hadir membawa warna baru dalam dunia hiburan lokal, khususnya di skena idol independen Indonesia.",
+                name: "Group Cheki 🖤",
+                image: "group.jpg",
+                deskripsi: "Stellaria adalah grup idola yang berasal dari Malang, Indonesia. Grup ini mulai aktif sejak sekitar tahun 2023 dan terus berkembang hingga kini. Saat ini, Stellaria terdiri dari lima anggota berbakat: Alice, Nae, Yuna, Melody, dan Ella. Dengan semangat dan kekompakan mereka, Stellaria hadir membawa warna baru dalam dunia hiburan lokal, khususnya di skena idol independen Indonesia.",
             }
         };
 
         // Cart functionality
         let cart = JSON.parse(localStorage.getItem('stellaria-cart')) || [];
-        
+
         function updateCartCount() {
             const count = cart.reduce((total, item) => total + item.quantity, 0);
             document.getElementById('cart-count').textContent = count;
         }
-        
+
         function renderCartItems() {
             const cartContainer = document.getElementById('cart-items');
             const totalElement = document.getElementById('cart-total');
-            
+
             if (cart.length === 0) {
                 cartContainer.innerHTML = '<p class="text-gray-500 text-center py-8">Your cart is empty</p>';
                 totalElement.textContent = 'Rp0';
                 return;
             }
-            
+
             let html = '';
             let total = 0;
-            
+
             cart.forEach((item, index) => {
-                const price = item.name.includes('Group') ? 30000 :25000;
+                const price = item.name.includes('Group') ? 30000 : 25000;
                 const itemTotal = price * item.quantity;
                 total += itemTotal;
-                
+
                 html += `
                     <div class="flex items-center py-4 border-b">
                         <img src="${item.image}" alt="${item.name}" class="w-16 h-16 object-cover rounded-lg">
@@ -541,14 +594,14 @@
                     </div>
                 `;
             });
-            
+
             cartContainer.innerHTML = html;
             totalElement.textContent = `Rp${total}`;
         }
-        
+
         function addToCart(name, emoji, image) {
             const existingItem = cart.find(item => item.name === name);
-            
+
             if (existingItem) {
                 existingItem.quantity += 1;
             } else {
@@ -559,49 +612,49 @@
                     quantity: 1
                 });
             }
-            
+
             localStorage.setItem('stellaria-cart', JSON.stringify(cart));
             updateCartCount();
             renderCartItems();
-            
+
             // Show a small notification
             const notification = document.createElement('div');
             notification.className = 'fixed bottom-4 right-4 bg-pink-600 text-white px-4 py-2 rounded-lg shadow-lg';
             notification.textContent = `${name} added to cart!`;
             document.body.appendChild(notification);
-            
+
             setTimeout(() => {
                 notification.classList.add('opacity-0', 'translate-y-2', 'transition');
                 setTimeout(() => notification.remove(), 300);
             }, 2000);
         }
-        
+
         function removeFromCart(index) {
             cart.splice(index, 1);
             localStorage.setItem('stellaria-cart', JSON.stringify(cart));
             updateCartCount();
             renderCartItems();
         }
-        
+
         function clearCart() {
             cart = [];
             localStorage.setItem('stellaria-cart', JSON.stringify(cart));
             updateCartCount();
             renderCartItems();
         }
-        
+
         function checkout() {
             if (cart.length === 0) {
                 alert('Your cart is empty!');
                 return;
             }
-            
+
             document.getElementById('checkout-modal').classList.add('active');
         }
-        
+
         function completeOrder(event) {
             event.preventDefault();
-            
+
             // In a real implementation, you would send this data to your server
             const formData = {
                 fullname: document.getElementById('fullname').value,
@@ -613,36 +666,36 @@
                     return total + (price * item.quantity);
                 }, 0)
             };
-            
+
             console.log('Order completed:', formData);
-            
+
             // Clear the cart
             clearCart();
-            
+
             // Close checkout modal and show thank you
             document.getElementById('checkout-modal').classList.remove('active');
             document.getElementById('thankyou-modal').classList.add('active');
-            
+
             // Reset form
             document.getElementById('checkout-form').reset();
         }
-        
+
         // Modal functionality
-function openModal(memberId) {
-    const member = members[memberId];
-    const modal = document.getElementById('modal');
+        function openModal(memberId) {
+            const member = members[memberId];
+            const modal = document.getElementById('modal');
 
-     document.getElementById('modal-title').textContent = member.name;
-    document.getElementById('modal-image').src = member.image || 'fallback.jpg';
+            document.getElementById('modal-title').textContent = member.name;
+            document.getElementById('modal-image').src = member.image || 'fallback.jpg';
 
-    let contentHtml = '';
+            let contentHtml = '';
 
-    if (memberId === 'group') {
-        // Hanya deskripsi untuk Group Cheki
-        contentHtml = `<p class="text-gray-700">${member.deskripsi || '-'}</p>`;
-    } else {
-        // Detail lengkap untuk member biasa
-        contentHtml = `
+            if (memberId === 'group') {
+                // Hanya deskripsi untuk Group Cheki
+                contentHtml = `<p class="text-gray-700">${member.deskripsi || '-'}</p>`;
+            } else {
+                // Detail lengkap untuk member biasa
+                contentHtml = `
             <p><span class="font-medium">Jikoshoukai:</span> ${member.jiko || '-'}</p>
             <p><span class="font-medium">Tanggal Lahir:</span> ${member.tanggallahir || '-'}</p>
             <p><span class="font-medium">Zodiak:</span> ${member.zodiac || '-'}</p>
@@ -654,38 +707,38 @@ function openModal(memberId) {
             <p><span class="font-medium">Warna Favorit:</span> ${member.warnafavorit || '-'}</p>
         `;
 
-        if (member.facts && member.facts.length > 0) {
-            contentHtml += `<div><span class="font-medium">Fun Facts:</span><ul class="list-disc list-inside mt-1">`;
-            member.facts.forEach(fact => {
-                contentHtml += `<li>${fact}</li>`;
-            });
-            contentHtml += `</ul></div>`;
-        }
-    }
-            
+                if (member.facts && member.facts.length > 0) {
+                    contentHtml += `<div><span class="font-medium">Fun Facts:</span><ul class="list-disc list-inside mt-1">`;
+                    member.facts.forEach(fact => {
+                        contentHtml += `<li>${fact}</li>`;
+                    });
+                    contentHtml += `</ul></div>`;
+                }
+            }
+
             document.getElementById('modal-content').innerHTML = contentHtml;
             modal.classList.add('active');
         }
-        
+
         function closeModal() {
             document.getElementById('modal').classList.remove('active');
         }
-        
+
         function closeCheckoutModal() {
             document.getElementById('checkout-modal').classList.remove('active');
         }
-        
+
         function closeThankYouModal() {
             document.getElementById('thankyou-modal').classList.remove('active');
         }
-        
+
         // Initialize
         document.addEventListener('DOMContentLoaded', () => {
             updateCartCount();
             renderCartItems();
-            
+
             document.getElementById('checkout-form').addEventListener('submit', completeOrder);
-            
+
             // Close modals when clicking outside
             document.querySelectorAll('.modal').forEach(modal => {
                 modal.addEventListener('click', (e) => {
@@ -697,4 +750,5 @@ function openModal(memberId) {
         });
     </script>
 </body>
+
 </html>
